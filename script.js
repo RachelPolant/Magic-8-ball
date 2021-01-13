@@ -14,9 +14,9 @@ const answers = [
   "My magic 8 ball said no",
   "Outlook about as good as 2020 was",
   "Very doubtful",
-  "Don't make decisions based on a fake magic 8 ball, duh",
+  "Don't make decisions based on a magic 8 ball, duh",
   "Take a nap and ask again later",
-  "Uh oh, um, better not tell you now. Have some beer first",
+  "Um, better not tell you now. Have some beer first",
   "I need a nap. Ask later",
   "Focus harder and ask again",
 ];
@@ -29,7 +29,7 @@ window.onload = function () {
 
   eightball.addEventListener("click", function () {
     if (question.value.length < 1) {
-      alert("Enter a question!");
+      alert("Ask What It Is You Must Know!");
     } else {
       eight.innerText = "";
       let num = Math.floor(Math.random() * Math.floor(answers.length));
