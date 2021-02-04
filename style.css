@@ -8,14 +8,35 @@ h1 {
   background: #462b3f;
   padding: 0;
   margin: 0;
+  position: absolute;
+  background: #462b3f;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-style: double;
+  border-color: #fd8d43;
+  border-width: 25px;
+  opacity: 75%; */
 }
+/* .border {
+  border-style: double;
+  border-color: #fd8d43;
+  border-width: 25px;
+  opacity: 75%;
+} */
 #content {
-  width: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
+  width: 80%;
+  height: 95%;
+  margin: 15px auto;
+  /* margin-top: 23px; */
   background-color: #c58ba4;
   border-style: ridge;
   border-color: #0c5443;
+  opacity: 90%;
   border-width: 25px;
   text-align: center;
   font-family: "Fraunces", serif;
@@ -23,8 +44,9 @@ h1 {
 }
 
 div.eight-ball {
-  background-color: black;
-  border: 1px solid black;
+  background-color: #cfc7f8;
+  background-image: linear-gradient(315deg, #cfc7f8 0%, #ebbba7 74%);
+  border: 1px solid lightgrey;
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -33,7 +55,7 @@ div.eight-ball {
   margin-top: 30px;
 }
 
-div.answer {
+/* div.answer {
   background: #c0c0c0;
   background: -webkit-radial-gradient(top left, #c0c0c0, #808080);
   background: -moz-radial-gradient(top left, #c0c0c0, #808080);
@@ -43,25 +65,29 @@ div.answer {
   width: 50%;
   height: 50%;
   margin: 25% auto;
-}
+} */
 
 #eight {
   font-size: 5em;
-  margin: 20% auto;
-  color: white;
+  margin: 34% auto;
+  color: #dcd2d9;
+  text-shadow: 4px 4px 8px#ba94dcd9;
 }
 
 #answer {
   padding: 23px;
-  color: #941735;
+  text-shadow: 0 0 3px #941735, 0 0 5px #941735;
+  /* color: #dcd2d9;
+  text-shadow: 5px 5px 10px#ba94dcd9; */
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 22px;
+  /* font-weight: bolder; */
 }
 
 #question {
   margin: 20px;
   padding: 10px;
-  width: 400px;
+  width: 20em;
   font-size: 22px;
 }
 
@@ -73,4 +99,48 @@ div.answer {
 .input {
   border-radius: 4px;
   border: 2px solid #0c5443;
+}
+
+@media only screen and (max-width: 768px) {
+  #content {
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    border-style: ridge;
+    border-color: #0c5443;
+    border-width: 25px;
+    opacity: 75%;
+  }
+  #question {
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+    font-size: 22px;
+  }
+  .body {
+    background: #462b3f;
+    padding: 0;
+    margin: 0;
+    /* border-style: double;
+    border-color: #fd8d43;
+    border-width: 25px; */
+    opacity: 75%;
+  }
+  div.eight-ball {
+    background-color: #cfc7f8;
+    background-image: linear-gradient(315deg, #cfc7f8 0%, #ebbba7 74%);
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    max-width: 238px;
+    max-height: 238px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  #eight {
+    font-size: 3em;
+    margin: 34% auto;
+    color: #dcd2d9;
+    text-shadow: 4px 4px 8px#ba94dcd9;
+  }
 }
